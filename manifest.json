@@ -7,7 +7,8 @@
     "description": "Bluewrite in a sidebar",
 
     "icons": {
-        "48": "icons/icon_square_blue_5000p.png"
+        "48": "icons/icon_square_blue_48p.png",
+        "96": "icons/icon_square_blue_96p.png"
     },
 
     "browser_action": {
