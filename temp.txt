@@ -1,0 +1,25 @@
+"content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["blwrtify.js"]
+    }
+  ]
+
+
+  document.body.style.marginLeft = "350px";
+
+var BLWRTiframe = document.createElement('iframe');
+BLWRTiframe.src = "https://blwrt.com/notes";
+
+BLWRTiframe.style.display = "block";
+BLWRTiframe.style.position = "fixed";
+BLWRTiframe.style.top = "0";
+BLWRTiframe.style.left = "0";
+BLWRTiframe.style.zIndex = "1000000000";
+BLWRTiframe.style.height = "100%";
+BLWRTiframe.style.width = "350px";
+BLWRTiframe.style.border = "none";
+
+
+document.body.appendChild(BLWRTiframe);
+

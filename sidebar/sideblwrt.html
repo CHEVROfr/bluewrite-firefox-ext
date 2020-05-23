@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <div id="pleaseChooseUrl">
+            <p>Please define the url of your BLUEWRITE server.</p>
+            <button id="chooseUrl">GO</button>
+        </div>
+        <iframe id="BLWRTiframe"></iframe>
+        
+        <style>
+            body {
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: #0d0d0d;
+            }
+            iframe {
+                height: 100vh;
+                border: none;
+                width: 100%;
+            }
+
+
+            #pleaseChooseUrl {
+                margin: 1.5rem;
+                display: none;
+            }
+            #pleaseChooseUrl p {
+                color: #fff;
+                font-size: 1.4rem;
+            }
+            #pleaseChooseUrl button {
+                color: #003f45;
+                font-size: 1.6rem;
+                font-weight: bold;
+                background: #fff;
+                border: none;
+                border-radius: 5px;
+                transition: all .5s;
+            }
+            #pleaseChooseUrl button:hover {
+                color: #fff;
+                background: #003f45;
+            }
+        </style>
+        <script src="sideblwrt.js"></script>
+    </body>
+</html>
